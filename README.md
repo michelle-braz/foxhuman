@@ -1,52 +1,28 @@
 # Hi, I'm Michelle 👋
 
-I'm building **RAVEN** — an Incident Intelligence API for logs, alerts, and faster incident investigation.
+Founder at **FOXHUMAN**.
 
-RAVEN turns scattered logs and alerts into:
-**priority, evidence, likely hypotheses, and next investigation steps.**
+I explore how human-centered systems can reduce cognitive load in complex technical operations.
 
-Currently validating with selected technical testers using real incidents and anonymized logs.
+## Current focus
 
-🛠️ Python · FastAPI · REST APIs · QA & software testing → builder/founder  
-🌍 Lisbon
+- Observability
+- Incident response
+- Technical investigation
+- UX research
+- Operational information design
 
-## Now
+## Selected project
 
-- 🐦 **RAVEN** — ready for assisted pilot.  
-  Focused on reducing noise, avoiding misleading investigation paths, and accelerating the first useful hypothesis during real incidents.
+### RAVEN
 
-_I build slowly and correctly. Reliability over feature count._
+An operational memory layer for incident investigation, built with Python and FastAPI.
 
-📫 LinkedIn: https://www.linkedin.com/in/michelle-braz-perfil/  
-📩 Email: michelle@ravenrisk.dev
+RAVEN was created to organize scattered incident data, separate evidence from hypotheses, and clarify where an investigation should begin.
 
----
+The project helped shape the broader FOXHUMAN approach to human-centered operational systems.
 
-Portuguese version available below.
+## Contact
 
-<details>
-<summary>Português</summary>
-
-# Oi, eu sou a Michelle 👋
-
-Estou construindo a **RAVEN** — uma Incident Intelligence API para logs, alertas e investigação de incidentes mais rápida.
-
-A RAVEN transforma logs e alertas dispersos em:
-**prioridade, evidências, hipóteses prováveis e próximos passos de investigação.**
-
-Atualmente estou validando com testers técnicos selecionados, usando incidentes reais e logs anonimizados.
-
-🛠️ Python · FastAPI · REST APIs · QA e testes de software → builder/founder  
-🌍 Lisboa
-
-## Agora
-
-- 🐦 **RAVEN** — pronta para piloto assistido.  
-  Focada em reduzir ruído, evitar pistas erradas e acelerar a primeira hipótese útil durante incidentes reais.
-
-_Eu construo devagar e corretamente. Confiabilidade acima de volume de features._
-
-📫 LinkedIn: https://www.linkedin.com/in/michelle-braz-perfil/  
-📩 Email: michelle@ravenrisk.dev
-
-</details>
+📫 [LinkedIn](https://www.linkedin.com/in/michelle-braz-perfil/)  
+📩 [Email](mailto:michelle.braz@gmail.com)
