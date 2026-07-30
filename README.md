@@ -1,26 +1,29 @@
 # Hi, I'm Michelle 👋
 
-Founder at **FOXHUMAN**.
+Founder of **FOXHUMAN** and Product Designer.
 
-I explore how human-centered systems can reduce cognitive load in complex technical operations.
+I simplify user experiences in complex technological systems.
 
-## Current focus
+At FOXHUMAN, I combine design, strategy, and artificial intelligence to understand problems, analyze flows, and transform ideas into clear prototypes for validation.
 
-- Observability
-- Incident response
-- Technical investigation
+## What I do
+
+- Experience diagnosis
+- User flow analysis
 - UX research
-- Operational information design
+- Information architecture
+- Prototyping for validation
+- Human-centered digital experiences
 
 ## Selected project
 
 ### RAVEN
 
-An operational memory layer for incident investigation, built with Python and FastAPI.
+An operational memory layer for incident investigation, built with **Python** and **FastAPI**.
 
-RAVEN was created to organize scattered incident data, separate evidence from hypotheses, and clarify where an investigation should begin.
+RAVEN organizes scattered incident data, separates evidence from hypotheses, and clarifies where a technical investigation should begin.
 
-The project helped shape the broader FOXHUMAN approach to human-centered operational systems.
+The project provided the practical foundation for the FOXHUMAN approach: understanding complex systems, reducing human effort, and creating a clearer path toward decisions.
 
 ## Contact
 
