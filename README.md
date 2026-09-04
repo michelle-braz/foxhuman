@@ -1,6 +1,6 @@
 # Hi, I'm Michelle 👋
 
-**Process Improvement | Product & Operations | Business Analysis | Digital Transformation**
+**Process Improvement | Product & Operations | Business Analysis | Digital Transformation | AI Applied to Operations**
 
 I work close to operations, systems, and real-world problems, looking for ways to make processes clearer, more efficient, and easier to act on.
 
