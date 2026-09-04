@@ -6,7 +6,7 @@ I work close to operations, systems, and real-world problems, looking for ways t
 
 My background includes customer support, technical support, hardware, and operations. Over time, I became increasingly interested not only in solving the immediate problem, but in understanding **why it happens, where the process breaks down, and what could work better**.
 
-Today, I focus on connecting operational needs with product and technology — identifying bottlenecks, organizing requirements, validating ideas, and helping turn problems into clearer solutions.
+Today, I focus on understanding operational needs, organizing requirements and priorities, and connecting operations with product and technical teams.
 
 ## What I work on
 
@@ -85,17 +85,18 @@ I'm currently interested in opportunities related to:
 
 **Melhoria de Processos | Product & Operations | Business Analysis | Transformação Digital**
 
-O meu percurso passou por atendimento ao cliente, suporte técnico, hardware e operações, sempre próxima de pessoas, sistemas, processos e problemas reais.
+O meu percurso passou por atendimento ao cliente, suporte técnico, hardware e operações, sempre próxima de pessoas, processos, sistemas e problemas reais.
 
-Hoje, foco-me em compreender a operação, identificar gargalos, organizar requisitos e prioridades e fazer a ponte entre necessidades operacionais e equipas técnicas.
+Hoje, foco-me em compreender necessidades operacionais, organizar requisitos e prioridades e fazer a ponte entre operação, produto e equipas técnicas.
 
 ## Áreas em que trabalho
 
-- Melhoria e análise de processos
+- Análise e melhoria de processos
 - Business Analysis
 - Product Discovery
 - Levantamento e organização de requisitos
-- Desenho de fluxos
+- Desenho de fluxos operacionais
+- Identificação de gargalos
 - Validação de hipóteses
 - Product & Operations
 - Colaboração entre operação e equipas técnicas
@@ -117,7 +118,7 @@ Foi dessa necessidade que nasceu a **RAVEN**.
 
 A RAVEN é um protótipo técnico funcional que organiza contexto operacional, separa evidências de hipóteses e apoia investigações sem substituir a decisão humana.
 
-A implementação pública foi construída com **Python** e **FastAPI** e demonstra um fluxo estruturado de análise, API funcional e testes automatizados.
+A implementação pública foi construída com **Python** e **FastAPI** e demonstra uma API funcional, um fluxo estruturado de análise e testes automatizados.
 
 O projeto demonstra a forma como trabalho:
 
