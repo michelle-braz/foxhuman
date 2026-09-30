@@ -1,146 +1,90 @@
-# Hi, I'm Michelle 👋
+# FOXHUMAN
 
-**Process Improvement | Product & Operations | Business Analysis | Digital Transformation | AI Applied to Operations**
+**Human-Centered Operational Systems**
 
-I work close to operations, systems, and real-world problems, looking for ways to make processes clearer, more efficient, and easier to act on.
+A FOXHUMAN é um projeto autoral criado por **Michelle Braz** para desenvolver sistemas que reduzam complexidade operacional e tornem informação difícil de interpretar em contexto claro para decisão humana.
 
-My background includes customer support, technical support, hardware, and operations. Over time, I became increasingly interested not only in solving the immediate problem, but in understanding **why it happens, where the process breaks down, and what could work better**.
+> **Complexidade por trás; simplicidade na frente.**
 
-Today, I focus on understanding operational needs, organizing requirements and priorities, and connecting operations with product and technical teams.
+## Primeira camada: Camada Raven
 
-## What I work on
+A **Camada Raven da FOXHUMAN** recebe sinais e dados autorizados, organiza o contexto e devolve uma leitura estruturada para ajudar uma pessoa a decidir o próximo passo.
 
-- Process analysis and improvement
-- Business and requirements analysis
-- Product Discovery
-- Operational workflow design
-- Bottleneck identification
-- Hypothesis validation
-- Product & Operations
-- Collaboration between operational and technical teams
-- AI applied to operational analysis and workflows
+Ela foi desenvolvida para responder, de forma simples:
 
-## FOXHUMAN
+- o que aconteceu;
+- o que importa agora;
+- quais evidências sustentam essa leitura;
+- qual é a hipótese atual;
+- qual é o impacto e a prioridade;
+- qual é o próximo passo recomendado;
+- o que ainda precisa de decisão humana.
 
-**FOXHUMAN** is an independent project I created to explore how technology can reduce operational complexity and improve the way people understand and act on information.
+A Camada Raven não substitui o profissional e não executa decisões críticas de forma autônoma.
 
-The work included conversations and validation with professionals across:
+## O que já existe
 
-**QA • Engineering • Observability • Security • Support • SRE • NOC • Operations**
+A implementação ativa inclui:
 
-A recurring pattern emerged: important operational context is often fragmented across tools, tickets, logs, alerts, and previous incidents.
+- núcleo em Python;
+- APIs e interfaces de uso;
+- leitura de texto, logs e dados estruturados nos fluxos suportados;
+- classificação por impacto e prioridade;
+- separação entre evidência e hipótese;
+- autenticação e consentimento no piloto;
+- mascaramento de segredos antes da análise;
+- persistência e auditoria privadas;
+- Docker, Linux, cloud e validação automatizada;
+- piloto controlado para medir impacto real no trabalho.
 
-That problem led to **RAVEN**.
+## Exemplos de aplicação
 
-## Selected project
+A mesma camada pode apoiar contextos diferentes sem mudar seu princípio central.
 
-### RAVEN — Operational Context Prototype
+**Operações e tecnologia**  
+Organizar logs, alertas e sinais técnicos antes de uma decisão operacional.
 
-RAVEN is a functional technical prototype designed to organize operational context during incident investigation.
+**Segurança e investigação autorizada**  
+Separar evidência de hipótese, registrar proveniência e orientar próximos passos sem executar ações ofensivas.
 
-Built with **Python** and **FastAPI**, the public implementation:
+**Finanças**  
+Organizar sinais de exceção, risco operacional ou inconsistência para priorização e revisão humana. Este é um exemplo de aplicação do modelo; não é apresentada aqui como integração financeira já validada.
 
-- normalizes incident signals;
-- organizes available evidence;
-- separates evidence from hypotheses;
-- highlights recurring signals;
-- suggests possible investigation steps;
-- keeps the final decision with the human analyst;
-- stores only explicitly approved resolution context.
+**Setor público e governamental**  
+Apoiar triagem e organização de informação em fluxos que exigem rastreabilidade, auditoria e decisão humana. O uso concreto depende de validação institucional e requisitos próprios.
 
-The goal is not to replace observability or incident-management tools.
+**Suporte e operações de serviço**  
+Transformar informação dispersa em contexto acionável para reduzir tempo de triagem e repetição de trabalho manual.
 
-RAVEN explores a different question:
+## Limite público
 
-> How can we reduce the effort required to understand what happened before deciding what to do next?
+Esta apresentação mostra **o produto e suas capacidades observáveis**, não a lógica interna.
 
-The project demonstrates how I approach problems:
+Não são publicados:
 
-**understand the operation → identify the bottleneck → organize requirements → validate the problem → build and test a possible solution**
+- pesos;
+- heurísticas;
+- critérios estratégicos internos;
+- lógica mental/metodológica detalhada;
+- segredos;
+- código privado;
+- documentação operacional sensível.
 
-## Technical familiarity
+## Especificação pública
 
-`Python` • `FastAPI` • `REST APIs` • `Git` • `GitHub` • `Logs` • `Automated Tests`
+A especificação técnica pública da primeira camada está em:
 
-Technology is a tool in my work — not the starting point.
+**[Camada Raven — Especificação Pública](CAMADA_RAVEN.md)**
 
-## Currently focused on
+## Estrutura oficial
 
-I'm currently interested in opportunities related to:
+- **FOXHUMAN** — identidade, princípios e ecossistema.
+- **Camada Raven** — primeira camada de apoio operacional à decisão.
+- **Implementação e metodologia** — mantidas em ambiente privado.
+- **Histórico de evolução** — preservado, mas não publicado.
 
-- Process Improvement
-- Business Analysis
-- Product Operations
-- Digital Transformation
-- Technology Operations
+## Autoria
 
-## Contact
+FOXHUMAN e Camada Raven foram idealizadas e desenvolvidas por **Michelle Braz**.
 
-[LinkedIn](https://www.linkedin.com/in/michelle-braz-perfil/)  
-[Email](mailto:miichelle.braz@gmail.com)
-
----
-
-# Olá, sou a Michelle 👋
-
-**Melhoria de Processos | Product & Operations | Business Analysis | Transformação Digital**
-
-O meu percurso passou por atendimento ao cliente, suporte técnico, hardware e operações, sempre próxima de pessoas, processos, sistemas e problemas reais.
-
-Hoje, foco-me em compreender necessidades operacionais, organizar requisitos e prioridades e fazer a ponte entre operação, produto e equipas técnicas.
-
-## Áreas em que trabalho
-
-- Análise e melhoria de processos
-- Business Analysis
-- Product Discovery
-- Levantamento e organização de requisitos
-- Desenho de fluxos operacionais
-- Identificação de gargalos
-- Validação de hipóteses
-- Product & Operations
-- Colaboração entre operação e equipas técnicas
-- IA aplicada a operações
-
-## FOXHUMAN
-
-A **FOXHUMAN** é um projeto autoral criado para explorar como a tecnologia pode reduzir complexidade operacional e tornar o caminho até à decisão mais claro.
-
-O trabalho incluiu conversas e validações com profissionais de:
-
-**QA • Engenharia • Observabilidade • Segurança • Suporte • SRE • NOC • Operações**
-
-Dessas validações surgiu um padrão recorrente: contexto importante fragmentado entre ferramentas, tickets, logs, alertas e histórico operacional.
-
-Foi dessa necessidade que nasceu a **RAVEN**.
-
-## RAVEN — Protótipo de Contexto Operacional
-
-A RAVEN é um protótipo técnico funcional que organiza contexto operacional, separa evidências de hipóteses e apoia investigações sem substituir a decisão humana.
-
-A implementação pública foi construída com **Python** e **FastAPI** e demonstra uma API funcional, um fluxo estruturado de análise e testes automatizados.
-
-O projeto demonstra a forma como trabalho:
-
-**entender a operação → identificar o gargalo → organizar requisitos → validar o problema → construir e testar uma possível solução**
-
-## Familiaridade técnica
-
-`Python` • `FastAPI` • `REST APIs` • `Git` • `GitHub` • `Logs` • `Testes Automatizados`
-
-A tecnologia é uma ferramenta no meu trabalho — não o ponto de partida.
-
-## Foco atual
-
-Procuro oportunidades relacionadas com:
-
-- Process Improvement
-- Business Analysis
-- Product Operations
-- Digital Transformation
-- Technology Operations
-
-## Contacto
-
-[LinkedIn](https://www.linkedin.com/in/michelle-braz-perfil/)  
-[Email](mailto:miichelle.braz@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/michelle-braz-perfil/) · [Contato](mailto:miichelle.braz@gmail.com)
