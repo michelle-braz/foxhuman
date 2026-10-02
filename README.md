@@ -2,89 +2,83 @@
 
 **Human-Centered Operational Systems**
 
-A FOXHUMAN é um projeto autoral criado por **Michelle Braz** para desenvolver sistemas que reduzam complexidade operacional e tornem informação difícil de interpretar em contexto claro para decisão humana.
+A FOXHUMAN desenvolve sistemas para transformar complexidade operacional em contexto claro para **decisão humana**.
 
 > **Complexidade por trás; simplicidade na frente.**
 
-## Primeira camada: Camada Raven
+## Products
 
-A **Camada Raven da FOXHUMAN** recebe sinais e dados autorizados, organiza o contexto e devolve uma leitura estruturada para ajudar uma pessoa a decidir o próximo passo.
+### RAVEN — Human-Centered Decision Intelligence Layer
 
-Ela foi desenvolvida para responder, de forma simples:
+RAVEN recebe sinais, contexto e dados autorizados e os transforma em uma leitura estruturada para apoiar decisões.
 
-- o que aconteceu;
-- o que importa agora;
-- quais evidências sustentam essa leitura;
-- qual é a hipótese atual;
-- qual é o impacto e a prioridade;
-- qual é o próximo passo recomendado;
-- o que ainda precisa de decisão humana.
+**Fluxo público:** sinal → entendimento → evidências → impacto → prioridade → recomendação → decisão humana → ação → resultado.
 
-A Camada Raven não substitui o profissional e não executa decisões críticas de forma autônoma.
+A decisão final permanece humana. A apresentação pública descreve capacidades observáveis; código privado, infraestrutura sensível, segredos e mecanismos proprietários não são expostos.
 
-## O que já existe
+## Methodology
 
-A implementação ativa inclui:
+### PRISMA
 
-- núcleo em Python;
-- APIs e interfaces de uso;
-- leitura de texto, logs e dados estruturados nos fluxos suportados;
-- classificação por impacto e prioridade;
-- separação entre evidência e hipótese;
-- autenticação e consentimento no piloto;
-- mascaramento de segredos antes da análise;
-- persistência e auditoria privadas;
-- Docker, Linux, cloud e validação automatizada;
-- piloto controlado para medir impacto real no trabalho.
+PRISMA é a metodologia operacional da FOXHUMAN apresentada publicamente em dois níveis:
 
-## Exemplos de aplicação
+- **MacroPRISMA** — organiza o trabalho ponta a ponta.
+- **MicroPRISMA** — identifica e fecha a menor unidade útil com começo, fim e validação.
 
-A mesma camada pode apoiar contextos diferentes sem mudar seu princípio central.
+A documentação pública explica **o método e seus princípios**, não a lógica técnica proprietária usada internamente para executar, priorizar ou orquestrar.
 
-**Operações e tecnologia**  
-Organizar logs, alertas e sinais técnicos antes de uma decisão operacional.
+## Trust & Responsibility
 
-**Segurança e investigação autorizada**  
-Separar evidência de hipótese, registrar proveniência e orientar próximos passos sem executar ações ofensivas.
+A FOXHUMAN trata confiança como parte do produto, não como documentação posterior.
 
-**Finanças**  
-Organizar sinais de exceção, risco operacional ou inconsistência para priorização e revisão humana. Este é um exemplo de aplicação do modelo; não é apresentada aqui como integração financeira já validada.
+- **Privacy** — finalidade, minimização, retenção, exclusão e direitos sobre dados.
+- **Security** — proteção, controle de acesso, gestão de incidentes e divulgação responsável.
+- **Responsible AI** — limites da IA, uso responsável e supervisão humana.
+- **Reliability** — testes, validação, evidência e recuperação.
+- **Human Oversight** — decisões relevantes permanecem sob controle humano.
+- **Transparency** — distinção entre evidência, hipótese, recomendação e decisão.
+- **Governance** — responsabilidades, rastreabilidade e auditoria.
+- **Accessibility** — redução de carga cognitiva e acesso compreensível.
+- **Compliance** — conformidade e requisitos aplicáveis ao contexto de uso.
 
-**Setor público e governamental**  
-Apoiar triagem e organização de informação em fluxos que exigem rastreabilidade, auditoria e decisão humana. O uso concreto depende de validação institucional e requisitos próprios.
+## Public / Private boundary
 
-**Suporte e operações de serviço**  
-Transformar informação dispersa em contexto acionável para reduzir tempo de triagem e repetição de trabalho manual.
+**Público:** identidade, princípios, capacidades observáveis, metodologia PRISMA em nível Macro/Micro e compromissos de confiança.
 
-## Limite público
+**Privado:** código do RAVEN, infraestrutura sensível, segredos, mecanismos internos, heurísticas e lógica proprietária do PRISMA.
 
-Esta apresentação mostra **o produto e suas capacidades observáveis**, não a lógica interna.
+## Technical evidence
 
-Não são publicados:
+A implementação ativa do RAVEN é mantida em repositório privado e inclui API, interfaces, testes automatizados, infraestrutura de execução, persistência e controles de segurança. Evidências públicas são publicadas somente quando podem ser compartilhadas sem reduzir a segurança ou expor propriedade intelectual.
 
-- pesos;
-- heurísticas;
-- critérios estratégicos internos;
-- lógica mental/metodológica detalhada;
-- segredos;
-- código privado;
-- documentação operacional sensível.
+## Structure
 
-## Especificação pública
+```text
+FOXHUMAN
+├── Products
+│   └── RAVEN
+├── Methodology
+│   └── PRISMA
+│       ├── MacroPRISMA
+│       └── MicroPRISMA
+└── Trust & Responsibility
+    ├── Privacy
+    ├── Security
+    ├── Responsible AI
+    ├── Reliability
+    ├── Human Oversight
+    ├── Transparency
+    ├── Governance
+    ├── Accessibility
+    └── Compliance
 
-A especificação técnica pública da primeira camada está em:
+PRIVATE — Technology & IP
+├── RAVEN implementation
+└── PRISMA proprietary logic
+```
 
-**[Camada Raven — Especificação Pública](CAMADA_RAVEN.md)**
+## Founder
 
-## Estrutura oficial
+FOXHUMAN foi fundada por **Michelle Braz**.
 
-- **FOXHUMAN** — identidade, princípios e ecossistema.
-- **Camada Raven** — primeira camada de apoio operacional à decisão.
-- **Implementação e metodologia** — mantidas em ambiente privado.
-- **Histórico de evolução** — preservado, mas não publicado.
-
-## Autoria
-
-FOXHUMAN e Camada Raven foram idealizadas e desenvolvidas por **Michelle Braz**.
-
-[LinkedIn](https://www.linkedin.com/in/michelle-braz-perfil/) · [Contato](mailto:miichelle.braz@gmail.com)
+A visão: criar tecnologia em que a complexidade permaneça por trás e a pessoa receba, na frente, contexto suficiente para compreender, decidir e agir.
