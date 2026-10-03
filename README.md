@@ -2,83 +2,80 @@
 
 **Human-Centered Operational Systems**
 
-A FOXHUMAN desenvolve sistemas para transformar complexidade operacional em contexto claro para **decisão humana**.
-
 > **Complexidade por trás; simplicidade na frente.**
 
-## Products
+## Michelle Braz
 
-### RAVEN — Human-Centered Decision Intelligence Layer
+Founder da FOXHUMAN.
 
-RAVEN recebe sinais, contexto e dados autorizados e os transforma em uma leitura estruturada para apoiar decisões.
+A visão é criar tecnologia em que a complexidade permaneça por trás e a pessoa receba, na frente, contexto suficiente para compreender, decidir e agir.
 
-**Fluxo público:** sinal → entendimento → evidências → impacto → prioridade → recomendação → decisão humana → ação → resultado.
+## FOXHUMAN
 
-A decisão final permanece humana. A apresentação pública descreve capacidades observáveis; código privado, infraestrutura sensível, segredos e mecanismos proprietários não são expostos.
+A FOXHUMAN desenvolve sistemas para transformar complexidade operacional em contexto claro para **decisão humana**.
 
-## Methodology
-
-### PRISMA
+## PRISMA
 
 PRISMA é a metodologia operacional da FOXHUMAN apresentada publicamente em dois níveis:
 
-- **MacroPRISMA** — organiza o trabalho ponta a ponta.
-- **MicroPRISMA** — identifica e fecha a menor unidade útil com começo, fim e validação.
+- **MacroPRISMA** — enxerga o todo, organiza, conduz, executa, acompanha e fiscaliza o trabalho do início ao fim.
+- **MicroPRISMA** — entra em uma camada, função ou tema específico para verificar, diagnosticar, modificar, atualizar, refinar e validar.
 
-A documentação pública explica **o método e seus princípios**, não a lógica técnica proprietária usada internamente para executar, priorizar ou orquestrar.
+Gates técnicos são separados do Macro/Micro e servem para provar avanço ou fechamento.
+
+A documentação pública apresenta somente a metodologia conceitual. Lógica técnica, heurísticas, regras de decisão, critérios internos, mecanismos de priorização e orquestração proprietária permanecem privados.
+
+## Produto 01 — RAVEN
+
+**Human-Centered Decision Intelligence**
+
+RAVEN transforma sinais, contexto e dados autorizados em uma leitura estruturada para apoiar decisões.
+
+**Fluxo público:** evidência → entendimento → impacto → prioridade → recomendação → decisão humana → ação → acompanhamento → resultado.
+
+A decisão final permanece humana.
+
+### RAVEN Cycle
+
+O RAVEN Cycle mostra apenas os marcos que alteraram de forma relevante a direção, o escopo ou a experiência do produto.
+
+Ele registra **o que mudou e por quê em nível público**, sem expor raciocínio interno, heurísticas, pesos ou mecanismos proprietários.
 
 ## Trust & Responsibility
 
-A FOXHUMAN trata confiança como parte do produto, não como documentação posterior.
+A FOXHUMAN trata confiança como parte do produto.
 
-- **Privacy** — finalidade, minimização, retenção, exclusão e direitos sobre dados.
-- **Security** — proteção, controle de acesso, gestão de incidentes e divulgação responsável.
-- **Responsible AI** — limites da IA, uso responsável e supervisão humana.
-- **Reliability** — testes, validação, evidência e recuperação.
-- **Human Oversight** — decisões relevantes permanecem sob controle humano.
-- **Transparency** — distinção entre evidência, hipótese, recomendação e decisão.
-- **Governance** — responsabilidades, rastreabilidade e auditoria.
-- **Accessibility** — redução de carga cognitiva e acesso compreensível.
-- **Compliance** — conformidade e requisitos aplicáveis ao contexto de uso.
+- **Privacy**
+- **Security**
+- **Responsible AI**
+- **Reliability**
+- **Human Oversight**
+- **Transparency**
+- **Governance**
+- **Accessibility**
+- **Compliance**
+- **Responsible Disclosure**
 
 ## Public / Private boundary
 
-**Público:** identidade, princípios, capacidades observáveis, metodologia PRISMA em nível Macro/Micro e compromissos de confiança.
+**Público:** Michelle Braz, FOXHUMAN, metodologia conceitual PRISMA, RAVEN, marcos públicos do RAVEN Cycle e compromissos de confiança.
 
-**Privado:** código do RAVEN, infraestrutura sensível, segredos, mecanismos internos, heurísticas e lógica proprietária do PRISMA.
+**Privado:** código do RAVEN, infraestrutura sensível, segredos, mecanismos internos, heurísticas, regras de decisão e lógica proprietária.
 
 ## Technical evidence
 
-A implementação ativa do RAVEN é mantida em repositório privado e inclui API, interfaces, testes automatizados, infraestrutura de execução, persistência e controles de segurança. Evidências públicas são publicadas somente quando podem ser compartilhadas sem reduzir a segurança ou expor propriedade intelectual.
+A implementação ativa do RAVEN é mantida em repositório privado e inclui código, testes, infraestrutura de execução, persistência e controles de segurança. Evidências públicas são compartilhadas somente quando isso não reduz a segurança nem expõe propriedade intelectual.
 
-## Structure
+## Estrutura
 
 ```text
-FOXHUMAN
-├── Products
-│   └── RAVEN
-├── Methodology
-│   └── PRISMA
-│       ├── MacroPRISMA
-│       └── MicroPRISMA
-└── Trust & Responsibility
-    ├── Privacy
-    ├── Security
-    ├── Responsible AI
-    ├── Reliability
-    ├── Human Oversight
-    ├── Transparency
-    ├── Governance
-    ├── Accessibility
-    └── Compliance
+Michelle Braz
+└── FOXHUMAN
+    ├── PRISMA
+    ├── Produto 01 — RAVEN
+    │   └── RAVEN Cycle
+    └── Trust & Responsibility
 
-PRIVATE — Technology & IP
-├── RAVEN implementation
-└── PRISMA proprietary logic
+PRIVATE
+└── RAVEN technical system
 ```
-
-## Founder
-
-FOXHUMAN foi fundada por **Michelle Braz**.
-
-A visão: criar tecnologia em que a complexidade permaneça por trás e a pessoa receba, na frente, contexto suficiente para compreender, decidir e agir.
