@@ -31,7 +31,11 @@ A documentação pública apresenta somente a metodologia conceitual. Lógica t�
 
 RAVEN transforma sinais, contexto e dados autorizados em uma leitura estruturada para apoiar decisões.
 
-**Fluxo público:** evidência → entendimento → impacto → prioridade → recomendação → decisão humana → ação → acompanhamento → resultado.
+**Fluxo atual do piloto:** e-mail/OTP → perfil e área → conteúdo → evidência → triagem profissional → análise → decisão humana → Histórico.
+
+[Apresentação do RAVEN](CAMADA_RAVEN.md) · [Visão técnica de alto nível](RAVEN_TECHNICAL_OVERVIEW.md).
+
+Piloto pequeno acompanhado. Ferramentas são recomendações; imagens são revisão humana. Capacidade simultânea ainda não medida.
 
 A decisão final permanece humana.
 

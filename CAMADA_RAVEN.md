@@ -1,106 +1,45 @@
-# Camada Raven da FOXHUMAN — Especificação Pública
+# RAVEN by FOXHUMAN
 
-## 1. Propósito
+**Evidências para decidir com clareza.**
 
-A Camada Raven é a primeira camada operacional da FOXHUMAN. Seu objetivo é reduzir esforço de interpretação e organizar sinais dispersos antes de uma decisão humana.
+O RAVEN ajuda profissionais a transformar um ticket, log ou relato técnico em uma leitura rastreável, reconhecer o que falta confirmar e escolher o próximo passo. O sistema recomenda; o profissional decide.
 
-Ela transforma entradas autorizadas em uma resposta estruturada com contexto, evidência, hipótese, impacto, prioridade, confiança e próximo passo.
+## Da entrada à decisão
 
-## 2. Entradas suportadas
+**E-mail e OTP → perfil/área → conteúdo → triagem e método profissional → análise → decisão humana → Histórico.**
 
-Nos fluxos atualmente implementados, a camada trabalha com:
+Nome de exibição é opcional; sem nome, a conta mostra o e-mail. A área fica salva e pode ser alterada nas Configurações. Cada caso mantém a área utilizada quando foi analisado.
 
-- texto livre;
-- logs;
-- JSON e CSV quando previstos pelo fluxo;
-- dados numéricos estruturados;
-- fontes e integrações já conectadas ao núcleo.
+| Área | Contexto |
+|---|---|
+| QA | Qualidade e Testes |
+| SEC | Cibersegurança |
+| NET/NOC | Redes |
+| INF | Infraestrutura |
+| SRE | Confiabilidade |
+| SUP | Suporte |
 
-Leitura visual de imagens não é apresentada como capacidade concluída nesta especificação enquanto não houver implementação e validação ponta a ponta.
+A área orienta o método. Não determina automaticamente gravidade, causa ou prioridade. Sinais de outra especialidade podem apoiar a análise sem trocar a área principal silenciosamente.
 
-## 3. Saída principal
+## O que aparece na tela
 
-A experiência deve responder primeiro:
+Uma leitura curta dos sinais, lacunas, gravidade/confiança e ações com ferramentas. Evidências, origem e justificativa ficam em um único bloco expansível. **Aprovar, Ajustar e Rejeitar** registram a decisão humana; o Histórico permite reabrir o caso.
 
-1. O que aconteceu?
-2. O que importa agora?
-3. Quais evidências sustentam isso?
-4. Qual é a hipótese atual?
-5. Qual é o impacto?
-6. Qual é a prioridade?
-7. Qual é o próximo passo?
-8. O que continua dependendo de decisão humana?
+Texto, TXT, LOG, JSON e CSV seguem o fluxo suportado. PNG/JPG podem ser anexados para revisão humana; não há interpretação automática das imagens. Não anunciar formatos não suportados.
 
-## 4. Princípios de projeto
+## Compromissos e limites do piloto
 
-- decisão humana preservada;
-- evidência separada de hipótese;
-- incerteza explícita;
-- privacidade por padrão;
-- consentimento explícito;
-- dados sensíveis mascarados antes da análise;
-- rastreabilidade e auditoria quando necessárias;
-- complexidade técnica escondida da experiência principal.
+- Evidência vem da entrada; desconhecidos não são preenchidos por plausibilidade.
+- Confiança no contexto não comprova causa raiz. Gravidade/impacto podem ficar a determinar.
+- Ferramentas são recomendações; ações externas não são executadas automaticamente.
+- Histórico não implica treino automático com dados de clientes.
+- Piloto pequeno acompanhado; capacidade simultânea ainda não foi medida por teste de carga.
 
-## 5. Arquitetura pública em alto nível
+## Documentação oficial
 
-Sem expor implementação privada, o pacote é sustentado por:
+- [Visão técnica de alto nível](RAVEN_TECHNICAL_OVERVIEW.md)
+- [FOXHUMAN — hub público](https://github.com/michelle-braz/foxhuman)
+- [Apresentação pública do RAVEN](https://github.com/michelle-braz/foxhuman/blob/main/CAMADA_RAVEN.md)
+- [Entrar no piloto](https://raven-pr28-validation-production.up.railway.app/try)
 
-- **Python** — núcleo e regras do sistema;
-- **Linux** — ambiente operacional;
-- **Docker** — empacotamento reproduzível;
-- **Cloud** — execução do serviço;
-- **CI/CD** — testes e publicação controlada;
-- **Banco persistente** — estado do piloto e trilha de auditoria;
-- **E-mail transacional** — verificação de identidade e notificações;
-- **Monitoramento** — confirmação de saúde do serviço.
-
-## 6. Piloto controlado
-
-O fluxo de demonstração previsto é:
-
-**e-mail → consentimento → verificação → acesso → uso controlado → análise → validação de impacto → feedback → proposta**
-
-Características:
-
-- ciclo padrão de até 7 dias;
-- limite por e-mail verificado;
-- IP usado apenas para antiabuso;
-- conteúdo sensível mascarado;
-- decisão humana mantida;
-- impacto medido antes de qualquer proposta comercial.
-
-## 7. Exemplos de aplicação
-
-### Operações de tecnologia
-Logs e sinais de sistemas podem ser organizados para reduzir tempo de triagem e orientar investigação.
-
-### Segurança
-Evidências, hipóteses, impacto e prioridade podem ser organizados sem executar ações ofensivas automaticamente.
-
-### Finanças
-Sinais de exceção e risco operacional podem ser estruturados para revisão humana. Este exemplo descreve aplicação possível do modelo, não uma integração financeira já certificada.
-
-### Governo e setor público
-Fluxos com necessidade de rastreabilidade, auditoria e decisão humana podem se beneficiar da mesma camada, sujeitos às regras institucionais e legais de cada órgão.
-
-### Suporte e operações
-Informação dispersa entre tickets, logs e contexto pode ser organizada em uma leitura única antes da decisão.
-
-## 8. O que permanece privado
-
-A especificação pública não revela:
-
-- pesos;
-- fórmulas;
-- heurísticas;
-- regras internas detalhadas;
-- estratégia de produto;
-- metodologia mental da idealizadora;
-- segredos ou credenciais;
-- código privado;
-- arquitetura sensível.
-
-## 9. Estado
-
-A Camada Raven é um produto em validação operacional controlada. Capacidades só devem ser apresentadas como concluídas quando houver implementação e prova técnica correspondente.
+A implementação é mantida no core privado. Este hub compartilha somente documentação de produto revisada, sem código, segredos, heurísticas ou dados de participantes.
